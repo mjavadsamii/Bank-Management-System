@@ -3,19 +3,15 @@
 
 #include <string>
 
-using namespace std;
-
-class UserInfo
-{
+class UserInfo {
 private:
-    string name;
-    string family;
+    std::string name;
+    std::string family;
     int ID;
 
 public:
-    UserInfo(string name, string family, int ID) : name(name), family(family), ID(ID){};
-    string getname() {return name;}
+    UserInfo(std::string name, std::string family, int ID);
+    std::string getName();
 };
 
 #endif
-
